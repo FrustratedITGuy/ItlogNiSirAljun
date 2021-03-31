@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/*
+canvas{
+  background: #EEE;
+  display: block;
+  margin: 0 auto;
+  border: solid 6px #AAA;
+  border-radius: 10px;
+}*/
+
+/*.square {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #d8d8d8;
+  box-shadow: inset 15px 15px 10px #999;
+}*/
+
+.token{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 470px;
+  height: 470px;
+  margin: 2em auto;
+  background: url(spriteshit2.png);
+  animation: token 3s steps(23) forwards;
+
+}
+
+@keyframes token {
+/*  0%{
+    background-position: 0;
+  } */
+  0%{
+    background-position: 0 -470px;
+    transition-timing-function: linear;
+  }
+  100%{
+    background-position: 0 -11280px;
+    transition: opacity 1ms linear 100ms;
+  }
+
+}
+/*.heads{
+  width: 248px;
+  height: 248px;
+  background: url(Flip1.png) 0 0 no-repeat;
+  animation: token 1.92s steps(50) paused;
+  background-position: 0px 0px;
+}
+.tails{
+  width: 248px;
+  height: 248px;
+  background-image: url(Flip2.png) 0 0 no-repeat;
+  background-position: 10px 10px;
+}*/
