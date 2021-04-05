@@ -1,0 +1,27 @@
+.token{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  margin: 2em auto;
+  background: url(v.2Egg1.png);
+  animation: token 3s steps(23) forwards;
+
+}
+
+@keyframes token {
+/*  0%{
+    background-position: 0;
+  } */
+  0%{
+    background-position: 0 -300px;
+    transition-timing-function: linear;
+  }
+  100%{
+    background-position: 0 -7200px;
+    transition: opacity 1ms linear 100ms;
+  }
+
+}
